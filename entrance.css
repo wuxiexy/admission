@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #333;
+}
+
+
+
+/* 案例样式 start */
+.h1000 {
+    height: 1000px;
+}
+.demo {
+    margin: 50px;
+    padding: 20px 0;
+}
+.demo > div, .fade-join {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    background-color: #ededed;
+    margin-right: 20px;
+    padding: 0 10px;
+}
+/* 案例样式 end */
+
+
+
+
+
+
+
+/* 入场动画  */
+
+
+
+.join-animation {
+    -webkit-animation: join-animation 1.5s;
+    -moz-animation: join-animation 1.5s;
+    animation: join-animation 1.5s;
+
+    -webkit-transition-delay: 2s;
+    -moz-transition-delay: 2s;
+    transition-delay: 2s;
+}
+
+
+
+@-webkit-keyframes join-animation {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+@keyframes join-animation {
+    00% {
+        opacity: 0;
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+
+
